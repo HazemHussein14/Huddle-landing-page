@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Violet: #674baf;
+  --Soft-Magenta: #e882e8;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--Violet);
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
+  padding: 0 6.4rem;
+}
+.header {
+  padding: 9.6rem 6.4rem;
+}
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+  gap: 4.8rem;
+}
+.img-box img {
+  width: 100%;
+}
+.hero-title {
+  font-size: 5.2rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+  letter-spacing: -0.1rem;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 3.2rem;
+}
+.hero-text {
+  font-size: 2rem;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--Violet);
+  padding: 1.5rem 8rem;
+  border-radius: 10rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  box-shadow: 0 0.3rem 1.6rem 0.3rem rgba(0, 0, 0, 0.289);
+}
+.btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: #fff;
+}
+footer {
+  margin: 0 4.4rem 0 auto;
+  padding: 1.6rem 0;
+}
+footer .links {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+}
+footer .links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+footer .links a {
+  font-size: 2rem;
+  border: 1px solid #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+}
+footer .links li:hover a {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    padding: 0px 4.2rem;
+  }
+  .hero-title {
+    font-size: 4.4rem;
+  }
+  .hero-text {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 63em) {
+  html {
+    font-size: 50%;
+  }
+  .hero-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  footer {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 48em) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+  .container {
+    padding: 0px 3.6rem;
+  }
+  .header {
+    padding: 4.4rem 2.4rem;
+  }
+  .header img {
+    width: 30%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 9.6rem;
+  }
+  .hero-content {
+    margin-bottom: 5.4rem;
+}
+  .hero-title {
+    font-size: 3.6rem;
+  }
+  .hero-text {
+    margin-bottom: 3.4rem;
+}
+}
+
