@@ -10,11 +10,9 @@ This is a solution to the [Huddle landing page with single introductory section 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
@@ -46,8 +44,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 
-
-tion or for yourself when you look back on this project in the future.**
 
 ## Author
 
